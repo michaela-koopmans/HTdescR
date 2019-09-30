@@ -9,9 +9,19 @@ htdesc(smile, HT.type = "taft", sigma.selection = "A", ...)
 \arguments{
 \item{smile}{SMILES string for a chemical fragment in character, factor, or SMIset datatype.}
 
-\item{HT.type}{The type of Hammett-Taft (HT) descriptor; valid inputs include "taft", "meta", "para", "ortho", "induction", "es" and "user" for a user defined sigma descriptor.}
+\item{HT.type}{The type of Hammett-Taft (HT) descriptor; valid inputs include "taft", "meta", "para", "ortho", "inductive", "es" and "user" for a user defined sigma descriptor.}
 
-\item{sigma.selection}{The type of sigma to be returned; valid inputs include "A", "B", "C", "D", "E", "F", "G", "H", and "U"}
+\item{sigma.selection}{The type of sigma to be returned; valid inputs include "A", "B", "C", "D", "E", "F", "G", and "H"
+A = Avgerage value
+B = Hansch preferred value if available then EPIsuite value if available then Average value
+C = EPIsuite value if available then Hansch preferred value if available then Average of distinct values
+D = EPIsuite value if available then Average of distinct value
+E = Hansch preferred value if available then Average of distinct value
+F = Hansch preferred value if available then mode value if available then median value
+G = EPIsuite value if available then Hansch preferred value if available then median value
+H = Mode if available then Average of distinct value
+Avg.dist = Average of Distinct value
+Med = Median Value}
 
 \item{...}{arguments from the fmcsR::fmcbatch such as a and b}
 }

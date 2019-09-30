@@ -11,4 +11,11 @@ getr2.R
 predY.R
 qsarad.R
 qsarml.R
-
+getAD.R
+Batch Time Check.R
+htbatch - other.R
+Random Grid Search CV for SVM.R
+HTdescR-devlibs.R
+old-simpleModels.R
+htbatch-old.R
+RMSEcalc.R
